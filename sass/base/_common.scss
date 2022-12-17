@@ -1,0 +1,21 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-uptitle);
+    background-color: #ffffff;
+  }
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and(min-width:1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+     }
+  }
+
+  .no-scroll{
+    overflow: hidden;
+  }
