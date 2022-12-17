@@ -363,22 +363,14 @@ body {
   display: flex;
 }
 
+.navigation {
+  margin-right: auto;
+}
 @media screen and (min-width: 767px) {
   .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 96px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .navigation {
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .navigation {
-    margin-right: auto;
   }
 }
 
@@ -396,8 +388,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 32px;
     margin-right: 87px;
   }
 }
@@ -462,7 +453,6 @@ body {
 @media screen and (min-width: 768px) {
   .menu {
     padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -470,6 +460,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -516,8 +510,10 @@ body {
   position: relative;
 }
 
-.menu-item {
-  margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+  .menu__item {
+    margin-bottom: 10px;
+  }
 }
 
 .current::after {
@@ -578,7 +574,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow: auto;
 }
 @media screen and (min-width: 768px) {
   .menu-mobile {
@@ -630,7 +625,7 @@ body {
 }
 
 .menu-mob {
-  margin-bottom: 306px;
+  margin-bottom: auto;
 }
 
 .menu-mob__item:not(:last-child) {
@@ -647,6 +642,10 @@ body {
 }
 .menu-mob__link:hover, .menu-mob__link:focus {
   color: var(--color-blue);
+}
+
+.cont-div {
+  margin-top: auto;
 }
 
 .cont-mob {
@@ -1239,7 +1238,7 @@ body {
 }
 
 .footer-field {
-  margin-left: 15px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .footer-field {
@@ -1301,7 +1300,6 @@ body {
 }
 
 .footer-reset {
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1312,6 +1310,16 @@ body {
   padding-left: 16px;
   color: var(--color-white);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .footer-reset {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-reset {
+    width: 358px;
+  }
 }
 
 .foter-reset::-webkit-input-placeholder {
