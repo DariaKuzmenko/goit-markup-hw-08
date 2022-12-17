@@ -383,22 +383,29 @@ body {
   line-height: 1.1666666667;
   color: var(--color-logo);
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
+}
+
+.header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
-  .logo {
+  .header__logo {
     padding-top: 32px;
     margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .logo {
+  .header__logo {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
-    font-size: 26px;
-    line-height: 1.1923076923;
   }
 }
 
@@ -1094,8 +1101,6 @@ body {
           align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 @media screen and (max-width: 767px) {
   .contacts-container {
