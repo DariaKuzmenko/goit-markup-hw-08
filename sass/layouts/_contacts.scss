@@ -1,6 +1,7 @@
 .contacts-container {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
   }
   
   .contacts {
@@ -13,12 +14,18 @@
     color: var(--color-white);
     margin-bottom: 20px;
     display: block;
+    text-align: center;
   }
   
   .contacts-adress {
     font-style: normal;
+    margin-left: 124px;
+    margin-bottom: 60px;
   }
   
+  .contacts-list{
+    text-align: center;
+  }
   .contacts-item {
     margin-bottom: 9px;
   }
@@ -44,7 +51,8 @@
   }
   
   .footer-conteiner {
-    margin-left: 70px;
+    margin-left: 137px;
+    margin-bottom: 60px;
   }
   
   .footer-text {
@@ -84,11 +92,9 @@
     background-color: var(--color-blue);
   }
   
-  .footer-soc-icon {
-  }
   
   .footer-field {
-    margin-left: 93px;
+    margin-left: 15px;
   }
   
   .footer-text {
@@ -99,12 +105,15 @@
     text-transform: uppercase;
     color: var(--color-white);
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .footer-form {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 15px;
   }
   
   .footer-reset {
@@ -117,6 +126,7 @@
     background-color: transparent;
     padding-left: 16px;
     color: var(--color-white);
+    margin-bottom: 20px;
   }
   
   .foter-reset::placeholder {
