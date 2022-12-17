@@ -1098,6 +1098,14 @@ body {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 767px) {
+  .contacts-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts-container {
     -ms-flex-wrap: nowrap;
@@ -1126,11 +1134,11 @@ body {
 
 .contacts-adress {
   font-style: normal;
-  margin-bottom: 60px;
 }
 @media screen and (max-width: 1199px) {
   .contacts-adress {
-    margin-left: 124px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1171,8 +1179,7 @@ body {
 }
 
 .footer-conteiner {
-  margin-left: 137px;
-  margin-bottom: 60px;
+  margin: 60px auto;
 }
 @media screen and (min-width: 768px) {
   .footer-conteiner {

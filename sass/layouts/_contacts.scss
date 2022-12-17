@@ -4,6 +4,9 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    @media screen and(max-width:767px) {
+      flex-direction: column;
+    }
     @media screen and(min-width:1200px){
       flex-wrap: nowrap;
       margin: 0 auto;
@@ -28,9 +31,9 @@
   
   .contacts-adress {
     font-style: normal;
-    margin-bottom: 60px;
     @media screen and(max-width:1199px){
-      margin-left: 124px;
+      margin-left: auto;
+      margin-right: auto;
     }
     @media screen and(min-width:1200px){
       margin-left: 15px;
@@ -68,8 +71,7 @@
   }
   
   .footer-conteiner {
-    margin-left: 137px;
-    margin-bottom: 60px;
+    margin: 60px auto;
     @media screen and(min-width:768px){
       margin-left: 165px;
     }
