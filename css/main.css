@@ -100,7 +100,7 @@ body {
 }
 
 .modal {
-  width: 450px;
+  width: 100%;
   min-height: 609px;
   background-color: var(--color-white);
   border-radius: 4px;
@@ -114,6 +114,11 @@ body {
   transition: transform 300ms var(--transformation), border-radius 300ms var(--transformation);
   transition: transform 300ms var(--transformation), border-radius 300ms var(--transformation), -webkit-transform 300ms var(--transformation);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -345,12 +350,26 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   outline: transparent;
-  margin-left: 85px;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .modal-btn {
+    margin-left: 85px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal-btn {
     margin-left: 124px;
   }
+}
+
+.checkbox-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header {
@@ -603,6 +622,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 @media screen and (min-width: 768px) {
   .menu-open-btn {
@@ -681,6 +703,8 @@ body {
   display: flex;
   gap: 20px;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mob-soc-link {
@@ -709,8 +733,8 @@ body {
 
 .hero {
   background-color: #505158;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Header-mob.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header-mob.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-mob.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -719,33 +743,33 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Header-mob-2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header-mob-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-mob-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 480) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/header-tab.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/header-tab.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tab.jpg);
   }
 }
 @media screen and (min-width: 480) and (min-device-pixel-ratio: 2), screen and (min-width: 480) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480) and (min-resolution: 192dpi), screen and (min-width: 480) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Header-tab-2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header-tab-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-tab-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     padding: 118px 204px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/comand.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/comand.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/comand.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comand.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/comand-2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/comand-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/comand-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comand-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1114,14 +1138,13 @@ body {
   .contacts-container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin: 0 auto;
   }
 }
 
 .contacts {
-  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
 .logo-contacts {
@@ -1132,7 +1155,6 @@ body {
 @media screen and (max-width: 1199px) {
   .logo-contacts {
     text-align: center;
-    margin: auto;
   }
 }
 
@@ -1143,6 +1165,7 @@ body {
   .contacts-adress {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1183,7 +1206,12 @@ body {
 }
 
 .footer-conteiner {
-  margin: 60px auto;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .footer-conteiner {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-conteiner {
