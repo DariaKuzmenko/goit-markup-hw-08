@@ -358,11 +358,6 @@ body {
     margin-left: 85px;
   }
 }
-@media screen and (min-width: 768px) {
-  .modal-btn {
-    margin-left: 124px;
-  }
-}
 
 .checkbox-wrap {
   display: -webkit-box;
