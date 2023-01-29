@@ -1430,6 +1430,33 @@ body {
   margin-bottom: 40px;
 }
 
+.examples-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .examples-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples-list {
+    margin-bottom: 50px;
+  }
+}
+
 .examples-photo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1470,9 +1497,6 @@ body {
 
 .examples-item {
   width: 100%;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 @media screen and (min-width: 480px) {
   .examples-item {
@@ -1491,7 +1515,14 @@ body {
 }
 
 .examples-link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow 250ms var(--transformation);
   transition: -webkit-box-shadow 250ms var(--transformation);
@@ -1508,16 +1539,6 @@ body {
 .examples-top-wrap {
   position: relative;
   overflow: hidden;
-}
-
-.examples-item:hover .examples-top-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.examples-item:focus .examples-top-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .examples-top-text {
@@ -1538,9 +1559,19 @@ body {
   transition: transform 250ms var(--transformation);
   transition: transform 250ms var(--transformation), -webkit-transform 250ms var(--transformation);
 }
+.examples-link:hover .examples-top-text, .examples-link:focus .examples-top-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 
 .examples-text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .examples-title {
@@ -1555,5 +1586,6 @@ body {
 .examples-uptitle {
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: var(--color-uptitle);
 }/*# sourceMappingURL=main.css.map */
