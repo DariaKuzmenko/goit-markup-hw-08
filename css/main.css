@@ -1514,6 +1514,12 @@ body {
   }
 }
 
+.examples-link:hover,
+.examples-link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .examples-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1528,12 +1534,6 @@ body {
   transition: -webkit-box-shadow 250ms var(--transformation);
   transition: box-shadow 250ms var(--transformation);
   transition: box-shadow 250ms var(--transformation), -webkit-box-shadow 250ms var(--transformation);
-}
-
-.examples-link:hover,
-.examples-link:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples-top-wrap {
