@@ -43,11 +43,21 @@
   }
   
   .examples-item {
-    flex-basis: 370px;
+    width: 100%;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    @media screen and(min-width: 480px){
+      width: 450px;
+    }
+    @media screen and(min-width: 768px){
+      width: 354px;
+    }
+    @media screen and(min-width: 1200px){
+      width: calc((100% - 60px) / 3);
+    }
   }
+
   .examples-link {
     display: block;
     text-decoration: none;
